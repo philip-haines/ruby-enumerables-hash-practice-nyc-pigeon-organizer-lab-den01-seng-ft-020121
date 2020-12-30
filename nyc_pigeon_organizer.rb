@@ -23,6 +23,7 @@ def nyc_pigeon_organizer(data)
          pigeon_list[name][attribute_category] = []
        end 
        
+       pigeon_list[name][attribute_category] << attribute_value.to_s
        
       end
     end
