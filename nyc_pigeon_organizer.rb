@@ -12,17 +12,19 @@ def nyc_pigeon_organizer(data)
   # value_hash: { attribue => {values}, attribue => {values} ... } 
   
     value_hash.each do |attribute, pigeon_name|
-      # attribute => 
+      # attribute => Attribute Name (eg purple, grey, Library)
       # pigeon_name => Array of Pigeon Name Strings
       
       pigeon_name.each do |name|
+        # name => Each Pigeon's Name as a string
         
        if pigeon_list[name] == nil # Checks to see if name is already a key
-        pigeon_list[name] = {}
+        pigeon_list[name] = {} # Creates key using name variable 
        end
        
        if pigeon_list[name][attribute_category] == nil 
-         pigeon_list[name][attribute_category] = []
+          pigeon_list[name][attribute_category] = []
+          # creates hash of hash point to an array with first key being name, second key beig attribute category
        end 
        
        pigeon_list[name][attribute_category] << attribute.to_s
