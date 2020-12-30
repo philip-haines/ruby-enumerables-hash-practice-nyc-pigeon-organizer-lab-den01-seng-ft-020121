@@ -28,13 +28,14 @@ def nyc_pigeon_organizer(data)
        end 
        
        pigeon_list[name][attribute_category] << attribute.to_s
+       # Shovels attributes into array with hash of hash 
        
       end
     end
   end
 
  
-  pigeon_list
+  pigeon_list # Returns final hash 
 
   
   
