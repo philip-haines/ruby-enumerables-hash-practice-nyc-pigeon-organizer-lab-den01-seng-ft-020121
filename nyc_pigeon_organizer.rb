@@ -13,6 +13,9 @@ def nyc_pigeon_organizer(data)
        if pigeon_list[name] == nil # Checks to see if name is already a key
         pigeon_list[name] = {}
        end
+       
+       if pigeon_list[name][attribute_category] == nil
+         
       end
     end
   end
